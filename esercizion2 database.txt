@@ -1,0 +1,116 @@
+1-SELECT *
+  FROM [norwi].[dbo].[Products]
+
+
+
+2-SELECT TOP (1000) [ProductID]
+      ,[ProductName]
+     
+      ,[QuantityPerUnit]
+   
+      ,[UnitsInStock]
+      
+     
+   
+  FROM [norwi].[dbo].[Products]
+  where UnitsInStock >=40;
+
+
+
+3-SELECT TOP (1000) [EmployeeID]
+      ,[LastName]
+      ,[FirstName]
+     
+      ,[TitleOfCourtesy]
+      ,[BirthDate]
+      ,[HireDate]
+      ,[Address]
+      ,[City]
+      ,[Region]
+      ,[PostalCode]
+      ,[Country]
+      ,[HomePhone]
+      ,[Extension]
+  
+      
+      ,[ReportsTo]
+
+  FROM [norwi].[dbo].[Employees]
+  where City='London'
+
+
+4-SELECT  [OrderID]
+      ,[CustomerID]
+      ,[EmployeeID]
+      ,[OrderDate]
+  
+   
+      ,[ShipVia]
+      ,[Freight]
+      ,[ShipName]
+  
+
+    
+  
+  FROM [norwi].[dbo].[Orders]
+  ORDER BY Fre
+
+5-SELECT TOP (1000) [OrderID]
+      ,[CustomerID]
+      ,[EmployeeID]
+    
+    
+     
+      ,[Freight]
+      ,[ShipName]
+   
+ 
+      ,[ShipCountry]
+  FROM [norwi].[dbo].[Orders]
+  WHERE Freight >= 90 AND Freight <= 200
+
+6- SELECT TOP (1000) [ProductID]
+      ,[ProductName]
+      ,[SupplierID]
+      ,[CategoryID]
+      ,[QuantityPerUnit]
+      ,[UnitPrice]
+      ,[UnitsInStock]
+      ,[UnitsOnOrder]
+      ,[ReorderLevel]
+      ,[Discontinued]
+  FROM [norwi].[dbo].[Products]
+  where CategoryID=1
+
+7-SELECT TOP (1000) [OrderID]
+      ,[ProductID]
+      ,[UnitPrice]
+      ,[Quantity]
+      ,[Discount]
+  FROM [norwi].[dbo].[Order Details]
+
+  where Discount >0
+
+
+
+
+
+
+
+
+
+
+
+8-SELECT TOP (1000) [OrderID]
+      ,[CustomerID]
+      ,[EmployeeID]
+      ,[OrderDate]
+    
+      ,[ShipVia]
+      ,[Freight]
+      ,[ShipName]
+      ,[ShipAddress]
+     
+  FROM [norwi].[dbo].[Orders]
+  WHERE CustomerID = 'BOTTM' AND Freight > 50;'
+
